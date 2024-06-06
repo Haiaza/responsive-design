@@ -1,0 +1,160 @@
+/* body {
+    background-color: lightsalmon;
+    margin: 0px;
+    font-family: system-ui, sans-serif;
+  } */
+
+/* @media(min-width: 600px){
+  body {
+    background-color: lightgreen;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1199px){
+  body {
+    background-color: brown;
+  }
+} */
+
+/* @media(min-width: 320px) and (max-width: 480px){
+  body {
+    background-color: palevioletred;
+  }
+}
+
+@media(min-width: 481px) and (max-width: 767px){
+  body {
+    background-color: mediumaquamarine;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1199px){
+  body {
+    background-color: green;
+  }
+}
+
+@media(min-width: 1200px){
+  body {
+    background-color: navy;
+  }
+} */
+
+/* Above are the responsive design examples i created */
+
+/* 
+nav {
+  font-size: 18px;
+  background-color: pink;
+  padding: 0px 16px;
+}
+
+#destinations {
+  display:none
+}
+
+@media(min-width:550px){
+  #destinations {
+    display:flex;
+    gap: 16px
+  }
+  #destinations-mobile {
+    display: none;
+  }
+}
+The above code is applicable to the example hamburger menu task. */
+/* As the screen gets bigger we should see the nav
+As the screen gets smaller we should see the hamburger */
+
+/* reset our css */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header{
+  top: 0;
+  width: 100%;
+  height: 64px;
+  position: sticky;
+  background-color: #000000;
+}
+
+/* Nav menu */
+nav {
+  top: 0;
+  position: fixed;
+
+  right: -100%;
+  width: 300px;
+  height: 100%;
+
+  overflow: hidden;
+  padding-top: 48px;
+  transition: right 0.5s;
+  background-color: #E41F26;
+}
+
+nav a {
+  display: block;
+  padding: 24px 8px;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+#hamburger-icon {
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.line {
+  width: 36px;
+  height: 6px;
+  margin: 6px;
+  background-color: #ffffff;
+} 
+
+#hamburger-btn {
+  display: none;
+}
+
+/* Toggle menu icon */
+#hamburger-btn:checked+nav {
+  right: 0;
+}
+
+/* New code below: */
+.brand-text {
+  color: #463f3a;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
